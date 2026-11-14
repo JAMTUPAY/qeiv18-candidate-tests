@@ -1,0 +1,64 @@
+host neoamorfic-physics-01   commit 8a36294   utc 2026-11-14T214155Z   script tests/measure_subset.py
+--- the candidate's identity check
+{
+  "version": "QEIv18.2.0-candidate.1",
+  "state": "PASS",
+  "checked_files": 38,
+  "mismatches": [],
+  "status": "Experimental candidate, not independently certified"
+}
+V182 candidate readings on the subset: 51 recordings; config {'entropy_window': 256, 'coherence_window': 256, 'segment_length': 32}; band (2.0, 26.0) Hz
+  1/51 chb03/chb03_01: 900 steps, valid pairs 99.7%, 12.7 ms per step (11 s)
+  2/51 chb03/chb03_02: 900 steps, valid pairs 100.0%, 13.0 ms per step (23 s)
+  3/51 chb03/chb03_03: 900 steps, valid pairs 100.0%, 13.1 ms per step (35 s)
+  4/51 chb03/chb03_04: 900 steps, valid pairs 100.0%, 12.7 ms per step (47 s)
+  5/51 chb03/chb03_24: 900 steps, valid pairs 100.0%, 13.0 ms per step (58 s)
+  6/51 chb03/chb03_34: 900 steps, valid pairs 99.9%, 13.0 ms per step (70 s)
+  7/51 chb03/chb03_35: 900 steps, valid pairs 100.0%, 13.0 ms per step (82 s)
+  8/51 chb03/chb03_36: 900 steps, valid pairs 99.9%, 13.0 ms per step (94 s)
+  9/51 chb10/chb10_04: 1800 steps, valid pairs 99.9%, 18.5 ms per step (127 s)
+  10/51 chb10/chb10_12: 1800 steps, valid pairs 100.0%, 18.7 ms per step (161 s)
+  11/51 chb10/chb10_20: 1803 steps, valid pairs 99.0%, 19.4 ms per step (196 s)
+  12/51 chb10/chb10_27: 1804 steps, valid pairs 99.6%, 19.3 ms per step (231 s)
+  13/51 chb10/chb10_30: 1803 steps, valid pairs 100.0%, 19.2 ms per step (265 s)
+  14/51 chb10/chb10_31: 1805 steps, valid pairs 99.9%, 19.2 ms per step (300 s)
+  15/51 chb10/chb10_38: 1800 steps, valid pairs 99.8%, 19.7 ms per step (336 s)
+  16/51 chb10/chb10_89: 1800 steps, valid pairs 99.9%, 19.2 ms per step (370 s)
+  17/51 chb13/chb13_19: 900 steps, valid pairs 100.0%, 13.1 ms per step (382 s)
+  18/51 chb13/chb13_21: 900 steps, valid pairs 100.0%, 13.0 ms per step (394 s)
+  19/51 chb13/chb13_39: 900 steps, valid pairs 99.7%, 13.0 ms per step (406 s)
+  20/51 chb13/chb13_40: 900 steps, valid pairs 99.7%, 13.0 ms per step (417 s)
+  21/51 chb13/chb13_55: 900 steps, valid pairs 99.4%, 13.2 ms per step (429 s)
+  22/51 chb13/chb13_58: 900 steps, valid pairs 99.6%, 13.0 ms per step (441 s)
+  23/51 chb13/chb13_59: 900 steps, valid pairs 99.8%, 13.1 ms per step (453 s)
+  24/51 chb13/chb13_60: 900 steps, valid pairs 100.0%, 13.2 ms per step (465 s)
+  25/51 chb13/chb13_62: 900 steps, valid pairs 99.8%, 13.2 ms per step (477 s)
+  26/51 chb17/chb17a_03: 900 steps, valid pairs 100.0%, 13.6 ms per step (489 s)
+  27/51 chb17/chb17a_04: 900 steps, valid pairs 100.0%, 12.9 ms per step (501 s)
+  28/51 chb17/chb17b_63: 906 steps, valid pairs 99.9%, 12.7 ms per step (512 s)
+  29/51 chb17/chb17c_13: 900 steps, valid pairs 100.0%, 13.3 ms per step (524 s)
+  30/51 chb18/chb18_17: 900 steps, valid pairs 100.0%, 12.8 ms per step (536 s)
+  31/51 chb18/chb18_29: 900 steps, valid pairs 100.0%, 13.1 ms per step (548 s)
+  32/51 chb18/chb18_30: 900 steps, valid pairs 100.0%, 13.3 ms per step (560 s)
+  33/51 chb18/chb18_31: 568 steps, valid pairs 100.0%, 11.3 ms per step (566 s)
+  34/51 chb18/chb18_32: 900 steps, valid pairs 99.9%, 12.7 ms per step (578 s)
+  35/51 chb18/chb18_35: 900 steps, valid pairs 100.0%, 12.9 ms per step (589 s)
+  36/51 chb18/chb18_36: 900 steps, valid pairs 100.0%, 12.9 ms per step (601 s)
+  37/51 chb20/chb20_11: 900 steps, valid pairs 100.0%, 12.9 ms per step (613 s)
+  38/51 chb20/chb20_12: 900 steps, valid pairs 100.0%, 13.0 ms per step (624 s)
+  39/51 chb20/chb20_13: 900 steps, valid pairs 99.9%, 12.8 ms per step (636 s)
+  40/51 chb20/chb20_14: 900 steps, valid pairs 100.0%, 13.3 ms per step (648 s)
+  41/51 chb20/chb20_15: 900 steps, valid pairs 100.0%, 12.8 ms per step (660 s)
+  42/51 chb20/chb20_16: 867 steps, valid pairs 100.0%, 13.0 ms per step (671 s)
+  43/51 chb20/chb20_68: 541 steps, valid pairs 100.0%, 11.1 ms per step (677 s)
+  44/51 chb22/chb22_09: 900 steps, valid pairs 100.0%, 13.1 ms per step (689 s)
+  45/51 chb22/chb22_20: 900 steps, valid pairs 100.0%, 13.2 ms per step (701 s)
+  46/51 chb22/chb22_25: 900 steps, valid pairs 100.0%, 14.0 ms per step (713 s)
+  47/51 chb22/chb22_38: 900 steps, valid pairs 100.0%, 13.0 ms per step (725 s)
+  48/51 chb23/chb23_06: 1871 steps, valid pairs 100.0%, 19.2 ms per step (761 s)
+  49/51 chb23/chb23_08: 2585 steps, valid pairs 100.0%, 23.5 ms per step (822 s)
+  50/51 chb23/chb23_09: 3606 steps, valid pairs 100.0%, 32.9 ms per step (941 s)
+  51/51 chb23/chb23_20: 1252 steps, valid pairs 100.0%, 15.3 ms per step (960 s)
+record: records/measure_subset_2026-11-14.json
+MEASURE SUBSET DONE
+exit code: 0

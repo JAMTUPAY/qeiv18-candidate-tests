@@ -1,0 +1,263 @@
+{
+ "record": "V182 candidate readings on the subset",
+ "label": "candidate, not QEIv18",
+ "plan": "qeiv18-esa-adb: records/dev_V182_candidate_plan_2026-11-14.md",
+ "utc": "2026-11-14T21:57:55Z",
+ "code_commit": "8a36294d4a0033f9272262a1db20f217d58edbe2",
+ "candidate_root": "/root/neoamorfic/QEIv18.2-candidate",
+ "numpy": "2.2.6",
+ "config": {
+  "entropy_window": 256,
+  "coherence_window": 256,
+  "segment_length": 32
+ },
+ "band_hz": [
+  2.0,
+  26.0
+ ],
+ "step": 256,
+ "first_row": 255,
+ "roles": [
+  "left_front_temporal",
+  "left_back_temporal",
+  "right_front_temporal",
+  "right_back_temporal",
+  "left_central",
+  "right_central"
+ ],
+ "pairs": [
+  "0:1",
+  "0:2",
+  "0:3",
+  "0:4",
+  "0:5",
+  "1:2",
+  "1:3",
+  "1:4",
+  "1:5",
+  "2:3",
+  "2:4",
+  "2:5",
+  "3:4",
+  "3:5",
+  "4:5"
+ ],
+ "files": {
+  "chb03/chb03_01": {
+   "path": "readings/subset/chb03__chb03_01.npz",
+   "sha256": "201d38454085685dba9b4bda5506fcd08a7d7ca48a3ea5910ef7acb1ec3fa476"
+  },
+  "chb03/chb03_02": {
+   "path": "readings/subset/chb03__chb03_02.npz",
+   "sha256": "4a5c71e99b37d50d78b99277be2ada04ea132efa8c43a82eb0f255f13258f43a"
+  },
+  "chb03/chb03_03": {
+   "path": "readings/subset/chb03__chb03_03.npz",
+   "sha256": "cb368cc3f293baefe82fb796d3e66e3bc240375a34a1028f41c392b36abbf548"
+  },
+  "chb03/chb03_04": {
+   "path": "readings/subset/chb03__chb03_04.npz",
+   "sha256": "b6ce38a6ee821290d05fc48426a1333c6f822686ab6534aec723d22ec4d4ba8e"
+  },
+  "chb03/chb03_24": {
+   "path": "readings/subset/chb03__chb03_24.npz",
+   "sha256": "d3635c39cbce40bcadd681de361bc77663a56a0a8f9531d354f927675fb01822"
+  },
+  "chb03/chb03_34": {
+   "path": "readings/subset/chb03__chb03_34.npz",
+   "sha256": "ea7efb4674d5d39588b3827a268a046de1099653eb46f6c4425b837e5cc097d6"
+  },
+  "chb03/chb03_35": {
+   "path": "readings/subset/chb03__chb03_35.npz",
+   "sha256": "42417ad2224d8e6133bc5d1cc918211a5bb3b95baec33944dffe6bd70c764b74"
+  },
+  "chb03/chb03_36": {
+   "path": "readings/subset/chb03__chb03_36.npz",
+   "sha256": "8cc16570ac2e7274e8126bfd4e61b86aade91d35c68d7b90865db2e959985790"
+  },
+  "chb10/chb10_04": {
+   "path": "readings/subset/chb10__chb10_04.npz",
+   "sha256": "715941643bd53717832cc787ab6a7bbae704aae5fa9c5fb59196eaca0b941889"
+  },
+  "chb10/chb10_12": {
+   "path": "readings/subset/chb10__chb10_12.npz",
+   "sha256": "178c64dce63ee047c5859664814bd8415c20b1f54f8ae25bc4fe6c7183017feb"
+  },
+  "chb10/chb10_20": {
+   "path": "readings/subset/chb10__chb10_20.npz",
+   "sha256": "e112007993e0215ec119e37ac168db48b45035ffcd1b6a6780dce6f041ac4e17"
+  },
+  "chb10/chb10_27": {
+   "path": "readings/subset/chb10__chb10_27.npz",
+   "sha256": "fd7d6e0b65ccedd8dfb4083037d5fdd904bb85b5afedc2a627d0016af754ce8d"
+  },
+  "chb10/chb10_30": {
+   "path": "readings/subset/chb10__chb10_30.npz",
+   "sha256": "8f7c268c1e2f22573a6464d68a6353d3625610f9953fa4c959e28eeeebe96fe4"
+  },
+  "chb10/chb10_31": {
+   "path": "readings/subset/chb10__chb10_31.npz",
+   "sha256": "2bbf3a1504dcb4b59f89dc40516fcef926122c9339c13f0a4de555b7e2e5e888"
+  },
+  "chb10/chb10_38": {
+   "path": "readings/subset/chb10__chb10_38.npz",
+   "sha256": "03d40e28efc91dc5bc97df35d1a6bb33180ae54f0dedf222f45bb23488a1b93a"
+  },
+  "chb10/chb10_89": {
+   "path": "readings/subset/chb10__chb10_89.npz",
+   "sha256": "7eea87842e1bd7783a4d4b8f02e945d6b6c5e8b104108792ec8576cfb7387ac9"
+  },
+  "chb13/chb13_19": {
+   "path": "readings/subset/chb13__chb13_19.npz",
+   "sha256": "8bf7319e29e0121679020755de78f152bfbf12f8bd56acd821b23fddb22cd058"
+  },
+  "chb13/chb13_21": {
+   "path": "readings/subset/chb13__chb13_21.npz",
+   "sha256": "70d0bcf844f89dec7cad8675d99a69b01121a7998115fa44b77b9d16f039f441"
+  },
+  "chb13/chb13_39": {
+   "path": "readings/subset/chb13__chb13_39.npz",
+   "sha256": "bfe01aecb37c4a8d2e1a64112a1375b986e212d28b8837a9f6a826368462deb6"
+  },
+  "chb13/chb13_40": {
+   "path": "readings/subset/chb13__chb13_40.npz",
+   "sha256": "6c45ffe6e4bb9a36603fafcb53f0f55d9f236bc94cd0a58e7e67be9a5f568a0f"
+  },
+  "chb13/chb13_55": {
+   "path": "readings/subset/chb13__chb13_55.npz",
+   "sha256": "48f087ca14617367c011cca1833918ab52aac86b89a1b813317c248f33aad862"
+  },
+  "chb13/chb13_58": {
+   "path": "readings/subset/chb13__chb13_58.npz",
+   "sha256": "c6724d77f18c610aa592317681b2c1a9246b5f4f9614822f18c6bc956cd44277"
+  },
+  "chb13/chb13_59": {
+   "path": "readings/subset/chb13__chb13_59.npz",
+   "sha256": "c0a941deb4fbdc246a3b85f508e19c5de1e9c5474fbe7b28dd1275fd4e29f4cd"
+  },
+  "chb13/chb13_60": {
+   "path": "readings/subset/chb13__chb13_60.npz",
+   "sha256": "feedf14fad3c94a643be93f51f6040dc1a2ae8d434503ec98e109f65862089e1"
+  },
+  "chb13/chb13_62": {
+   "path": "readings/subset/chb13__chb13_62.npz",
+   "sha256": "6e70ae4a00b2d88b0f18e764f8dac7cde656d29029a3a070961a48459cb174f3"
+  },
+  "chb17/chb17a_03": {
+   "path": "readings/subset/chb17__chb17a_03.npz",
+   "sha256": "637962c437b04d0be854e4a21e75f7197bb842c04b045a520f7daf3b8ad6a92b"
+  },
+  "chb17/chb17a_04": {
+   "path": "readings/subset/chb17__chb17a_04.npz",
+   "sha256": "f062f5091fa13d4db40319e884f98ece75512b9cf434110fb0b7d9794e39ce47"
+  },
+  "chb17/chb17b_63": {
+   "path": "readings/subset/chb17__chb17b_63.npz",
+   "sha256": "5e56e82a1a60ac418aadde0c0d384f02b4a31c835ac6dc72085d653cdc71e961"
+  },
+  "chb17/chb17c_13": {
+   "path": "readings/subset/chb17__chb17c_13.npz",
+   "sha256": "57839c400116dcfe192b8d7264c1adbe6339575e4ef89cd252180b484615f088"
+  },
+  "chb18/chb18_17": {
+   "path": "readings/subset/chb18__chb18_17.npz",
+   "sha256": "8a503d468a2b82a85b55044fd7f93666cfdac7ce1b18f15f426b508112439a47"
+  },
+  "chb18/chb18_29": {
+   "path": "readings/subset/chb18__chb18_29.npz",
+   "sha256": "8ca0093b198b2d6321f42d6d2e840043f1cfa1ea1049e0385abcdfc3f2f2f7fa"
+  },
+  "chb18/chb18_30": {
+   "path": "readings/subset/chb18__chb18_30.npz",
+   "sha256": "798a1c09613cb2cd4efc29269bf520d302d891e9558aba5bb0ebcd631df86df9"
+  },
+  "chb18/chb18_31": {
+   "path": "readings/subset/chb18__chb18_31.npz",
+   "sha256": "c83906907299c9ecf8af41c5749377c988abada3d57a9d537dd6f65c3937b05a"
+  },
+  "chb18/chb18_32": {
+   "path": "readings/subset/chb18__chb18_32.npz",
+   "sha256": "6cc89b3ce1c885f6bd718feb82f34edd2176bba8099e7516fea54c18e2e8dbf7"
+  },
+  "chb18/chb18_35": {
+   "path": "readings/subset/chb18__chb18_35.npz",
+   "sha256": "9618b4826828cb1edc56abbc48d90e7f5d5a32ab520de55d418fff487fe717ca"
+  },
+  "chb18/chb18_36": {
+   "path": "readings/subset/chb18__chb18_36.npz",
+   "sha256": "cb4895788cd0a83ea087123adb1b6e8264dc52e0ca85afc6bc11fd0b22fc07e8"
+  },
+  "chb20/chb20_11": {
+   "path": "readings/subset/chb20__chb20_11.npz",
+   "sha256": "cf7222b95c82aa1df0897d3731f8928efb83749c52f89cf733dbe02e23aceacc"
+  },
+  "chb20/chb20_12": {
+   "path": "readings/subset/chb20__chb20_12.npz",
+   "sha256": "d094f73ef6a1401c0b770bf66b8cb568e5abe42ccb5103972abfad64985e97d0"
+  },
+  "chb20/chb20_13": {
+   "path": "readings/subset/chb20__chb20_13.npz",
+   "sha256": "c9944114bc81c39f7ebd24a60891a5d8509df5da502756703206e8fed0b3862b"
+  },
+  "chb20/chb20_14": {
+   "path": "readings/subset/chb20__chb20_14.npz",
+   "sha256": "fcd8b8e6210be41baae052e2401cf779a94e18f293d6ef8a64314e691d85532e"
+  },
+  "chb20/chb20_15": {
+   "path": "readings/subset/chb20__chb20_15.npz",
+   "sha256": "3d86fb238d6e413d265dcbe9583a568d1ee4cce4e0dfeefb40753c17f9ee97f3"
+  },
+  "chb20/chb20_16": {
+   "path": "readings/subset/chb20__chb20_16.npz",
+   "sha256": "6ac6d1f418a6b4cfb203f066d11735000803b02ab5b421c5ef29b92de5fe369b"
+  },
+  "chb20/chb20_68": {
+   "path": "readings/subset/chb20__chb20_68.npz",
+   "sha256": "d91735de4aebcff17f06d2a5a0c29848dd4277bdeb735673d39966a3160a7ded"
+  },
+  "chb22/chb22_09": {
+   "path": "readings/subset/chb22__chb22_09.npz",
+   "sha256": "ae30747dea4c1a6ffbde3505b6631d7c1e80cf633dfb19e698183e1dec7a0a11"
+  },
+  "chb22/chb22_20": {
+   "path": "readings/subset/chb22__chb22_20.npz",
+   "sha256": "b049b44e874a94dccd152b604258b49f0ef5fd6b93608f09ab91f284b23f2b69"
+  },
+  "chb22/chb22_25": {
+   "path": "readings/subset/chb22__chb22_25.npz",
+   "sha256": "12f77f1ab39d24d02a1114a642f4099728bf6bc31f566f95958f9a4437c8fe8c"
+  },
+  "chb22/chb22_38": {
+   "path": "readings/subset/chb22__chb22_38.npz",
+   "sha256": "dd460e933b7b6b36881eafde5e7faabbea04650560b71cca9d83aeec6606036b"
+  },
+  "chb23/chb23_06": {
+   "path": "readings/subset/chb23__chb23_06.npz",
+   "sha256": "26af14ac8470f0a05bc27b0db51ddf424ccd2cb458a32aa4bb8fa99f170fc07d"
+  },
+  "chb23/chb23_08": {
+   "path": "readings/subset/chb23__chb23_08.npz",
+   "sha256": "5e9242bf190a010f4a60d0ecc466d57b8ec717c9f4d76de8d24f206438dfee7a"
+  },
+  "chb23/chb23_09": {
+   "path": "readings/subset/chb23__chb23_09.npz",
+   "sha256": "8fd15703c8c9944cc1b7f0898a09ba366092464168e0ba474d6ffa04eb4a6b11"
+  },
+  "chb23/chb23_20": {
+   "path": "readings/subset/chb23__chb23_20.npz",
+   "sha256": "06603d29bb9cb748c4353f322295105a537d1278994043a6700d90ae8ff1d47f"
+  }
+ },
+ "totals": {
+  "steps": 58111,
+  "pair_ok": 870763,
+  "pairs": 871665,
+  "ent_ok": 1394632,
+  "ents": 1394664
+ },
+ "valid_pair_share": 0.99897,
+ "valid_entropy_share": 0.99998,
+ "ms_per_step_median": 13.061,
+ "seconds": 960.1,
+ "data_in_this_file": "counts, shares, timings, file hashes; no EEG value, no seizure position"
+}
