@@ -1,0 +1,46 @@
+host neoamorfic-physics-01   commit 47d9b7f   utc 2026-11-14T213224Z   script tests/probe.py
+--- the candidate's identity check
+{
+  "version": "QEIv18.2.0-candidate.1",
+  "state": "PASS",
+  "checked_files": 38,
+  "mismatches": [],
+  "status": "Experimental candidate, not independently certified"
+}
+{
+ "python": "3.10.12",
+ "numpy": "2.2.6",
+ "scipy": "1.15.3",
+ "api_gateway_public": [
+  "coherence_pair",
+  "coherence_series",
+  "derived_snapshot",
+  "diagnose",
+  "entropy_segment",
+  "entropy_series",
+  "legacy_run",
+  "measure",
+  "native_call_count",
+  "settings"
+ ],
+ "seconds_per_call": {
+  "Gateway(Config())": 2e-05,
+  "Gateway(Config(entropy_window=256, coherence_window=256, segment_length=32))": 1e-05,
+  "measure([a, b], end=1999)": 0.00138,
+  "measure([a, c], end=1999)": 0.00145,
+  "measure([a, a], end=1999)": 0.00144,
+  "measure([a, b], end=100)": 0.00083,
+  "measure([constant, b], end=1999)": 0.00087,
+  "measure([a, b, c], end=1999)": 0.0026,
+  "measure([a], end=1999)": 0.00043,
+  "entropy_segment(a[1744:2000])": 0.00037,
+  "entropy_segment(constant[1744:2000])": 0.00037,
+  "legacy_run([a])": 2.11791,
+  "diagnose([a, b])": 0.00142,
+  "default config: measure([a, b], end=1999)": 0.00121
+ },
+ "peak_memory_mb": 94.4
+}
+record: records/probe_2026-11-14.json
+CANDIDATE PROBE DONE
+exit code: 0

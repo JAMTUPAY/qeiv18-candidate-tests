@@ -1,0 +1,1244 @@
+{
+ "record": "Read-only probe of the candidate's API",
+ "plan": "qeiv18-esa-adb: records/dev_V182_candidate_plan_2026-11-14.md",
+ "label": "candidate, not QEIv18",
+ "utc": "2026-11-14T21:32:25Z",
+ "candidate_root": "/root/neoamorfic/QEIv18.2-candidate",
+ "python": "3.10.12",
+ "numpy": "2.2.6",
+ "scipy": "1.15.3",
+ "api_gateway_public": [
+  "coherence_pair",
+  "coherence_series",
+  "derived_snapshot",
+  "diagnose",
+  "entropy_segment",
+  "entropy_series",
+  "legacy_run",
+  "measure",
+  "native_call_count",
+  "settings"
+ ],
+ "api_config_public": [
+  "coherence_stride",
+  "coherence_window",
+  "entropy_window",
+  "fs",
+  "minimum_segments",
+  "sample_interval",
+  "segment_length"
+ ],
+ "config_default": {
+  "<dataclass Config>": {
+   "entropy_window": "int 20",
+   "coherence_window": "int 256",
+   "segment_length": "int 32",
+   "minimum_segments": "int 8",
+   "coherence_stride": "int 1",
+   "sample_interval": "NoneType None"
+  }
+ },
+ "answers": {
+  "Gateway(Config())": {
+   "<object Gateway>": {
+    "config": {
+     "<dataclass Config>": {
+      "entropy_window": "int 20",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None"
+     }
+    },
+    "native": {
+     "<object QEIGatewayExt>": {}
+    }
+   }
+  },
+  "Gateway(Config(entropy_window=256, coherence_window=256, segment_length=32))": {
+   "<object Gateway>": {
+    "config": {
+     "<dataclass Config>": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None"
+     }
+    },
+    "native": {
+     "<object QEIGatewayExt>": {}
+    }
+   }
+  },
+  "measure([a, b], end=1999)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1126076413673947",
+      "dS": "float -0.004754789027538564",
+      "kappa": "float 2.783950588785217",
+      "kappa_s0": "float 2.783950588785217",
+      "kappa_s1": "float 0.9226753306244949",
+      "kappa_s2_low": "float 2.6226850748054806",
+      "kappa_s2_mid": "float 2.783950588785217",
+      "kappa_s2_high": "float 2.783950588785217",
+      "Phi": "float 0.21669735262843523",
+      "lyapunov": "float -0.0025268059194689346",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[1.08458 1.11563 1.11261] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.157794020924203",
+      "dS": "float -0.010953702267355592",
+      "kappa": "float 2.63895789847496",
+      "kappa_s0": "float 2.63895789847496",
+      "kappa_s1": "float 0.84308825376716",
+      "kappa_s2_low": "float 2.5857641730098924",
+      "kappa_s2_mid": "float 2.63895789847496",
+      "kappa_s2_high": "float 2.63895789847496",
+      "Phi": "float 0.22285725133334555",
+      "lyapunov": "float -0.002511566724017396",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.86185 1.12129 1.15779] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[0.43864 0.79381 0.4304  0.10999] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[    nan 0.76436 0.34903 0.     ] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 3.14159 -0.48698 -0.74491  2.58392] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[0.27563 0.04335 0.13433 0.29634] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 1999",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  },
+  "measure([a, c], end=1999)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1126076413673947",
+      "dS": "float -0.004754789027538564",
+      "kappa": "float 2.783950588785217",
+      "kappa_s0": "float 2.783950588785217",
+      "kappa_s1": "float 0.9226753306244949",
+      "kappa_s2_low": "float 2.6226850748054806",
+      "kappa_s2_mid": "float 2.783950588785217",
+      "kappa_s2_high": "float 2.783950588785217",
+      "Phi": "float 0.21669735262843523",
+      "lyapunov": "float -0.0025268059194689346",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[1.08458 1.11563 1.11261] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 0.3310341101644761",
+      "dS": "float -0.01756842698115524",
+      "kappa": "float 2.9757479986290534",
+      "kappa_s0": "float 2.9757479986290534",
+      "kappa_s1": "float 4.405777863877724",
+      "kappa_s2_low": "float 2.9543990904026227",
+      "kappa_s2_mid": "float 2.9757479986290534",
+      "kappa_s2_high": "float 2.9757479986290534",
+      "Phi": "float 0.43293052276637944",
+      "lyapunov": "float 0.007088599672003014",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.30237 0.36167 0.33103] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[0.00248 0.15167 0.22539 0.06834] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[    nan 0.03048 0.11473 0.     ] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 0.      -2.82786 -2.96998  1.31626] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[0.0307  0.15846 0.13145 0.20579] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 1999",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  },
+  "measure([a, a], end=1999)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1126076413673947",
+      "dS": "float -0.004754789027538564",
+      "kappa": "float 2.783950588785217",
+      "kappa_s0": "float 2.783950588785217",
+      "kappa_s1": "float 0.9226753306244949",
+      "kappa_s2_low": "float 2.6226850748054806",
+      "kappa_s2_mid": "float 2.783950588785217",
+      "kappa_s2_high": "float 2.783950588785217",
+      "Phi": "float 0.21669735262843523",
+      "lyapunov": "float -0.0025268059194689346",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[1.08458 1.11563 1.11261] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1126076413673947",
+      "dS": "float -0.004754789027538564",
+      "kappa": "float 2.783950588785217",
+      "kappa_s0": "float 2.783950588785217",
+      "kappa_s1": "float 0.9226753306244949",
+      "kappa_s2_low": "float 2.6226850748054806",
+      "kappa_s2_mid": "float 2.783950588785217",
+      "kappa_s2_high": "float 2.783950588785217",
+      "Phi": "float 0.21669735262843523",
+      "lyapunov": "float -0.0025268059194689346",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[1.08458 1.11563 1.11261] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[1. 1. 1. 1.] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[nan  1.  1.  1.] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 0.00000e+00 -8.29028e-19 -2.44556e-18 -4.67051e-18] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[4.64440e-16 4.15407e-16 5.68820e-16 4.02217e-16] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 1999",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  },
+  "measure([a, b], end=100)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 0.9980468900623936",
+      "dS": "float -0.09425467920913988",
+      "kappa": "float 2.775375615164819",
+      "kappa_s0": "float 2.775375615164819",
+      "kappa_s1": "float 1.1644382856811986",
+      "kappa_s2_low": "float 2.799152244471926",
+      "kappa_s2_mid": "float 2.775375615164819",
+      "kappa_s2_high": "float 2.775375615164819",
+      "Phi": "float 0.2172116831391514",
+      "lyapunov": "float -0.06117701318195531",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.30675 0.34376 0.99805] nan=0"
+     },
+     "status": {
+      "S": "str 'insufficient_data'",
+      "dS": "str 'insufficient_data'",
+      "kappa": "str 'insufficient_data'",
+      "kappa_s0": "str 'insufficient_data'",
+      "kappa_s1": "str 'insufficient_data'",
+      "kappa_s2_low": "str 'insufficient_data'",
+      "kappa_s2_mid": "str 'insufficient_data'",
+      "kappa_s2_high": "str 'insufficient_data'",
+      "Phi": "str 'insufficient_data'",
+      "lyapunov": "str 'insufficient_data'",
+      "multi": "str 'insufficient_data'"
+     },
+     "sample_count": "int 101",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.0683949493379619",
+      "dS": "float 0.3136266444355471",
+      "kappa": "float 2.617083081594164",
+      "kappa_s0": "float 2.617083081594164",
+      "kappa_s1": "float 1.0790136690275558",
+      "kappa_s2_low": "float 2.609136500638192",
+      "kappa_s2_mid": "float 2.617083081594164",
+      "kappa_s2_high": "float 2.617083081594164",
+      "Phi": "float 0.2280850964280277",
+      "lyapunov": "float -0.018953197940016164",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.58873 0.75009 1.06839] nan=0"
+     },
+     "status": {
+      "S": "str 'insufficient_data'",
+      "dS": "str 'insufficient_data'",
+      "kappa": "str 'insufficient_data'",
+      "kappa_s0": "str 'insufficient_data'",
+      "kappa_s1": "str 'insufficient_data'",
+      "kappa_s2_low": "str 'insufficient_data'",
+      "kappa_s2_mid": "str 'insufficient_data'",
+      "kappa_s2_high": "str 'insufficient_data'",
+      "Phi": "str 'insufficient_data'",
+      "lyapunov": "str 'insufficient_data'",
+      "multi": "str 'insufficient_data'"
+     },
+     "sample_count": "int 101",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'insufficient_data'",
+     "reason": "str 'Need complete trailing window and at least eight nonoverlapping segments'",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[False False False False] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 100",
+     "support_start": "int 0",
+     "sample_count": "int 101",
+     "segments": "int 0",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "NoneType None",
+     "white_null_bias": "NoneType None",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 100",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  },
+  "measure([constant, b], end=1999)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 0.0",
+      "dS": "float 0.0",
+      "kappa": "float 0.0",
+      "kappa_s0": "float 0.0",
+      "kappa_s1": "float 0.0",
+      "kappa_s2_low": "float 0.0",
+      "kappa_s2_mid": "float 0.0",
+      "kappa_s2_high": "float 0.0",
+      "Phi": "float 0.0",
+      "lyapunov": "float 0.0",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0. 0. 0.] nan=0"
+     },
+     "status": {
+      "S": "str 'degenerate_input'",
+      "dS": "str 'degenerate_input'",
+      "kappa": "str 'degenerate_input'",
+      "kappa_s0": "str 'degenerate_input'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.157794020924203",
+      "dS": "float -0.010953702267355592",
+      "kappa": "float 2.63895789847496",
+      "kappa_s0": "float 2.63895789847496",
+      "kappa_s1": "float 0.84308825376716",
+      "kappa_s2_low": "float 2.5857641730098924",
+      "kappa_s2_mid": "float 2.63895789847496",
+      "kappa_s2_high": "float 2.63895789847496",
+      "Phi": "float 0.22285725133334555",
+      "lyapunov": "float -0.002511566724017396",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.86185 1.12129 1.15779] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'degenerate_input'",
+     "reason": "str 'A complete segment has zero variation; no coherence evidence'",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[nan nan nan nan] nan=17",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[False False False False] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "NoneType None",
+     "white_null_bias": "NoneType None",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 1999",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  },
+  "measure([a, b, c], end=1999)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1126076413673947",
+      "dS": "float -0.004754789027538564",
+      "kappa": "float 2.783950588785217",
+      "kappa_s0": "float 2.783950588785217",
+      "kappa_s1": "float 0.9226753306244949",
+      "kappa_s2_low": "float 2.6226850748054806",
+      "kappa_s2_mid": "float 2.783950588785217",
+      "kappa_s2_high": "float 2.783950588785217",
+      "Phi": "float 0.21669735262843523",
+      "lyapunov": "float -0.0025268059194689346",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[1.08458 1.11563 1.11261] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.157794020924203",
+      "dS": "float -0.010953702267355592",
+      "kappa": "float 2.63895789847496",
+      "kappa_s0": "float 2.63895789847496",
+      "kappa_s1": "float 0.84308825376716",
+      "kappa_s2_low": "float 2.5857641730098924",
+      "kappa_s2_mid": "float 2.63895789847496",
+      "kappa_s2_high": "float 2.63895789847496",
+      "Phi": "float 0.22285725133334555",
+      "lyapunov": "float -0.002511566724017396",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.86185 1.12129 1.15779] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 0.3310341101644761",
+      "dS": "float -0.01756842698115524",
+      "kappa": "float 2.9757479986290534",
+      "kappa_s0": "float 2.9757479986290534",
+      "kappa_s1": "float 4.405777863877724",
+      "kappa_s2_low": "float 2.9543990904026227",
+      "kappa_s2_mid": "float 2.9757479986290534",
+      "kappa_s2_high": "float 2.9757479986290534",
+      "Phi": "float 0.43293052276637944",
+      "lyapunov": "float 0.007088599672003014",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.30237 0.36167 0.33103] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[0.43864 0.79381 0.4304  0.10999] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[    nan 0.76436 0.34903 0.     ] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 3.14159 -0.48698 -0.74491  2.58392] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[0.27563 0.04335 0.13433 0.29634] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    },
+    "0:2": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[0.00248 0.15167 0.22539 0.06834] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[    nan 0.03048 0.11473 0.     ] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 0.      -2.82786 -2.96998  1.31626] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[0.0307  0.15846 0.13145 0.20579] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    },
+    "1:2": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[0.07873 0.15602 0.37231 0.07127] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[    nan 0.03545 0.28264 0.     ] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 0.      -2.32351 -2.30817 -2.74776] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[0.20559 0.21557 0.2515  0.2014 ] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 1999",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  },
+  "measure([a], end=1999)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1126076413673947",
+      "dS": "float -0.004754789027538564",
+      "kappa": "float 2.783950588785217",
+      "kappa_s0": "float 2.783950588785217",
+      "kappa_s1": "float 0.9226753306244949",
+      "kappa_s2_low": "float 2.6226850748054806",
+      "kappa_s2_mid": "float 2.783950588785217",
+      "kappa_s2_high": "float 2.783950588785217",
+      "Phi": "float 0.21669735262843523",
+      "lyapunov": "float -0.0025268059194689346",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[1.08458 1.11563 1.11261] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {},
+   "latest_input_index": "int 1999",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  },
+  "entropy_segment(a[1744:2000])": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "values": {
+    "S": "float 1.1126076413673947",
+    "dS": "float -0.004754789027538564",
+    "kappa": "float 2.783950588785217",
+    "kappa_s0": "float 2.783950588785217",
+    "kappa_s1": "float 0.9226753306244949",
+    "kappa_s2_low": "float 2.6226850748054806",
+    "kappa_s2_mid": "float 2.783950588785217",
+    "kappa_s2_high": "float 2.783950588785217",
+    "Phi": "float 0.21669735262843523",
+    "lyapunov": "float -0.0025268059194689346",
+    "multi": "ndarray shape=(3,) dtype=float64 first=[1.08458 1.11563 1.11261] nan=0"
+   },
+   "status": {
+    "S": "str 'ok'",
+    "dS": "str 'ok'",
+    "kappa": "str 'ok'",
+    "kappa_s0": "str 'ok'",
+    "kappa_s1": "str 'diagnostic_only'",
+    "kappa_s2_low": "str 'diagnostic_only'",
+    "kappa_s2_mid": "str 'diagnostic_only'",
+    "kappa_s2_high": "str 'diagnostic_only'",
+    "Phi": "str 'ok'",
+    "lyapunov": "str 'diagnostic_only'",
+    "multi": "str 'diagnostic_only'"
+   },
+   "sample_count": "int 256",
+   "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+  },
+  "entropy_segment(constant[1744:2000])": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "values": {
+    "S": "float 0.0",
+    "dS": "float 0.0",
+    "kappa": "float 0.0",
+    "kappa_s0": "float 0.0",
+    "kappa_s1": "float 0.0",
+    "kappa_s2_low": "float 0.0",
+    "kappa_s2_mid": "float 0.0",
+    "kappa_s2_high": "float 0.0",
+    "Phi": "float 0.0",
+    "lyapunov": "float 0.0",
+    "multi": "ndarray shape=(3,) dtype=float64 first=[0. 0. 0.] nan=0"
+   },
+   "status": {
+    "S": "str 'degenerate_input'",
+    "dS": "str 'degenerate_input'",
+    "kappa": "str 'degenerate_input'",
+    "kappa_s0": "str 'degenerate_input'",
+    "kappa_s1": "str 'diagnostic_only'",
+    "kappa_s2_low": "str 'diagnostic_only'",
+    "kappa_s2_mid": "str 'diagnostic_only'",
+    "kappa_s2_high": "str 'diagnostic_only'",
+    "Phi": "str 'ok'",
+    "lyapunov": "str 'diagnostic_only'",
+    "multi": "str 'diagnostic_only'"
+   },
+   "sample_count": "int 256",
+   "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+  },
+  "legacy_run([a])": {
+   "S": "ndarray shape=(1, 2400) dtype=float64 first=[0. 0. 0. 0.] nan=0",
+   "dS": "ndarray shape=(1, 2400) dtype=float64 first=[0. 0. 0. 0.] nan=0",
+   "kappa": "ndarray shape=(1, 2400) dtype=float64 first=[0. 0. 0. 0.] nan=0",
+   "coherence": "ndarray shape=(1, 2400) dtype=float64 first=[0. 0. 0. 0.] nan=0",
+   "resonance": "ndarray shape=(1, 2400) dtype=float64 first=[0.2109  0.21331 0.21596 0.21843] nan=0",
+   "MSE": "ndarray shape=(1, 3) dtype=float64 first=[1.76028 2.73668 3.24166] nan=0",
+   "lyapunov": "ndarray shape=(1,) dtype=float64 first=[0.03127] nan=0",
+   "lyapunov_S": "ndarray shape=(1,) dtype=float64 first=[0.0103] nan=0",
+   "attractor_radius": "ndarray shape=(1,) dtype=float64 first=[0.36174] nan=0",
+   "attractor_curvature": "ndarray shape=(1,) dtype=float64 first=[0.21489] nan=0",
+   "Phi": "ndarray shape=(1, 2400) dtype=float64 first=[0. 0. 0. 0.] nan=0",
+   "decision": "ndarray shape=(1, 2400) dtype=int64 first=[0 0 0 0] nan=0",
+   "decision_retrospective": "ndarray shape=(1, 2400) dtype=int64 first=[-1 -1 -1 -1] nan=0"
+  },
+  "other public callable: coherence_pair": "present (not called)",
+  "other public callable: coherence_series": "present (not called)",
+  "other public callable: derived_snapshot": "present (not called)",
+  "other public callable: entropy_series": "present (not called)",
+  "diagnose([a, b])": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1056198329781004",
+      "dS": "float 0.01796454929913538",
+      "kappa": "float 2.8927922178411656",
+      "kappa_s0": "float 2.8927922178411656",
+      "kappa_s1": "float 0.9357564406647888",
+      "kappa_s2_low": "float 2.7247911829500455",
+      "kappa_s2_mid": "float 2.8927922178411656",
+      "kappa_s2_high": "float 2.8927922178411656",
+      "Phi": "float 0.22240312231539008",
+      "lyapunov": "float -0.005134529244057545",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.38035 1.11775 1.10562] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 1.1448819197908895",
+      "dS": "float 0.056525986759968117",
+      "kappa": "float 2.7371548437495092",
+      "kappa_s0": "float 2.7371548437495092",
+      "kappa_s1": "float 0.8662812869501137",
+      "kappa_s2_low": "float 2.626840870958394",
+      "kappa_s2_mid": "float 2.7371548437495092",
+      "kappa_s2_high": "float 2.7371548437495092",
+      "Phi": "float 0.22542014249674053",
+      "lyapunov": "float -0.008142282145492027",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[0.75933 1.12738 1.14488] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 256",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[0.87468 0.75787 0.20449 0.20282] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[    nan 0.72328 0.09085 0.08894] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 0.      -0.83951 -0.485    2.08202] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[0.04265 0.06238 0.15145 0.10254] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 2399",
+     "support_start": "int 2144",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 256",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 2399",
+   "settings": {
+    "entropy_window": "int 256",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   },
+   "classification": "str 'undetermined'",
+   "interpretation_status": "str 'No new Atlas classification thresholds validated; measurement observations only'"
+  },
+  "default config: measure([a, b], end=1999)": {
+   "version": "str 'QEIv18.2.0-candidate.1'",
+   "channels": [
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 0.6537993598452552",
+      "dS": "float -0.5880536703007788",
+      "kappa": "float 2.531030298591932",
+      "kappa_s0": "float 2.531030298591932",
+      "kappa_s1": "float 9.382149407926839",
+      "kappa_s2_low": "float 2.531030298591932",
+      "kappa_s2_mid": "float 2.531030298591932",
+      "kappa_s2_high": "float 2.531030298591932",
+      "Phi": "float 0.22737929968760512",
+      "lyapunov": "float -0.05376725202538932",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[-0.08932 -0.19925  0.6538 ] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 20",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    },
+    {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "values": {
+      "S": "float 0.9365314998193063",
+      "dS": "float 1.020573459119668",
+      "kappa": "float 2.2738877983373986",
+      "kappa_s0": "float 2.2738877983373986",
+      "kappa_s1": "float 4.451041233853746",
+      "kappa_s2_low": "float 2.2738877983373986",
+      "kappa_s2_mid": "float 2.2738877983373986",
+      "kappa_s2_high": "float 2.2738877983373986",
+      "Phi": "float 0.24392413846637198",
+      "lyapunov": "float 0.03512135531153229",
+      "multi": "ndarray shape=(3,) dtype=float64 first=[-0.5664  -0.41003  0.93653] nan=0"
+     },
+     "status": {
+      "S": "str 'ok'",
+      "dS": "str 'ok'",
+      "kappa": "str 'ok'",
+      "kappa_s0": "str 'ok'",
+      "kappa_s1": "str 'diagnostic_only'",
+      "kappa_s2_low": "str 'diagnostic_only'",
+      "kappa_s2_mid": "str 'diagnostic_only'",
+      "kappa_s2_high": "str 'diagnostic_only'",
+      "Phi": "str 'ok'",
+      "lyapunov": "str 'diagnostic_only'",
+      "multi": "str 'diagnostic_only'"
+     },
+     "sample_count": "int 20",
+     "zero_S_note": "str 'Original zero-variance sentinel retained numerically; status prevents treating it as a finite entropy measurement.'"
+    }
+   ],
+   "pairs": {
+    "0:1": {
+     "version": "str 'QEIv18.2.0-candidate.1'",
+     "status": "str 'ok'",
+     "reason": "NoneType None",
+     "raw": "ndarray shape=(17,) dtype=float64 first=[0.43864 0.79381 0.4304  0.10999] nan=0",
+     "adjusted": "ndarray shape=(17,) dtype=float64 first=[    nan 0.76436 0.34903 0.     ] nan=2",
+     "phase": "ndarray shape=(17,) dtype=float64 first=[ 3.14159 -0.48698 -0.74491  2.58392] nan=0",
+     "jackknife_spread": "ndarray shape=(17,) dtype=float64 first=[0.27563 0.04335 0.13433 0.29634] nan=0",
+     "valid_bins": "ndarray shape=(17,) dtype=bool first=[ True  True  True  True] nan=0",
+     "frequencies": "ndarray shape=(17,) dtype=float64 first=[0.      0.03125 0.0625  0.09375] nan=0",
+     "latest_input_index": "int 1999",
+     "support_start": "int 1744",
+     "sample_count": "int 256",
+     "segments": "int 8",
+     "settings": {
+      "entropy_window": "int 20",
+      "coherence_window": "int 256",
+      "segment_length": "int 32",
+      "minimum_segments": "int 8",
+      "coherence_stride": "int 1",
+      "sample_interval": "NoneType None",
+      "version": "str 'QEIv18.2.0-candidate.1'",
+      "frequency_units": "str 'cycles/sample'",
+      "coherence_overlap": "int 0",
+      "coherence_detrend": "str 'segment_constant'",
+      "coherence_window_function": "str 'periodic_hann'"
+     },
+     "white_null_reference95": "float 0.3481636551311609",
+     "white_null_bias": "float 0.125",
+     "uncertainty_scope": "str 'Ideal stationary independent Gaussian segments only; no general alarm probability. Jackknife spread is descriptive, not calibrated confidence.'",
+     "adjusted_name": "str 'coherence_white_null_adjusted_v2'"
+    }
+   },
+   "latest_input_index": "int 1999",
+   "settings": {
+    "entropy_window": "int 20",
+    "coherence_window": "int 256",
+    "segment_length": "int 32",
+    "minimum_segments": "int 8",
+    "coherence_stride": "int 1",
+    "sample_interval": "NoneType None",
+    "version": "str 'QEIv18.2.0-candidate.1'",
+    "frequency_units": "str 'cycles/sample'",
+    "coherence_overlap": "int 0",
+    "coherence_detrend": "str 'segment_constant'",
+    "coherence_window_function": "str 'periodic_hann'"
+   }
+  }
+ },
+ "seconds_per_call": {
+  "Gateway(Config())": 2e-05,
+  "Gateway(Config(entropy_window=256, coherence_window=256, segment_length=32))": 1e-05,
+  "measure([a, b], end=1999)": 0.00138,
+  "measure([a, c], end=1999)": 0.00145,
+  "measure([a, a], end=1999)": 0.00144,
+  "measure([a, b], end=100)": 0.00083,
+  "measure([constant, b], end=1999)": 0.00087,
+  "measure([a, b, c], end=1999)": 0.0026,
+  "measure([a], end=1999)": 0.00043,
+  "entropy_segment(a[1744:2000])": 0.00037,
+  "entropy_segment(constant[1744:2000])": 0.00037,
+  "legacy_run([a])": 2.11791,
+  "diagnose([a, b])": 0.00142,
+  "default config: measure([a, b], end=1999)": 0.00121
+ },
+ "peak_memory_mb": 94.4,
+ "data_in_this_file": "structure of answers on constructed signals; no EEG value, no engine source"
+}
