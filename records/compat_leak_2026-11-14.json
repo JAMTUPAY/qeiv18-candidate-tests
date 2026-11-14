@@ -1,0 +1,144 @@
+{
+ "record": "V182 candidate side: compatibility, leakage, timings",
+ "label": "candidate, not QEIv18",
+ "plan": "qeiv18-esa-adb: records/dev_V182_candidate_plan_2026-11-14.md",
+ "utc": "2026-11-14T21:41:52Z",
+ "code_commit": "f28f8de9b5116f92dcca44db68d62e2e913a22bd",
+ "candidate_root": "/root/neoamorfic/QEIv18.2-candidate",
+ "python": "3.10.12",
+ "numpy": "2.2.6",
+ "scipy": "1.15.3",
+ "config": {
+  "entropy_window": 256,
+  "coherence_window": 256,
+  "segment_length": 32
+ },
+ "bases": [
+  "chbmit/chb01/chb01_03/left_front_temporal@115200",
+  "chbmit/chb02/chb02_16/left_front_temporal@30600",
+  "chbmit/chb03/chb03_01/left_front_temporal@115200",
+  "chbmit/chb04/chb04_05/left_front_temporal@304200",
+  "constructed/sine64_logistic",
+  "constructed/step_sine23"
+ ],
+ "legacy_run_sha256": {
+  "chbmit/chb01/chb01_03/left_front_temporal@115200": {
+   "S": "590a84b52a614d93971f4246501263c49b3b56f9dab1e1efd6b704fa84e715d8",
+   "dS": "ae862c33f395fd257cb97827d431aabf628f6faf55500b2a1344a4c17852083f",
+   "kappa": "d28ee9ad5f68a9439ad1d1be2eec939838d6eac95d62b6db00e09f2c8adf181f",
+   "coherence": "0e26536b220798d47d102c1ef79055e45f702457375e91071e1256f12bb597c4",
+   "resonance": "4ecdf148b6fba9d46ad1965deec54080a3867d4f03912f7e7fe7ae70899e1ba5",
+   "Phi": "d3514742d66cf688ab8808663d9bc95ce06c6aaa0f07a7755fb0136fe0fd81ee",
+   "decision": "8d54be598b42c2392df5dbb0a71007ae00a774091876c5077624819a8b0493a7",
+   "lyapunov": "de1adda211dfdcd60dbc7aafe52dcac402357dfce131a1dff8c8e6b2153c9caf",
+   "lyapunov_S": "5d24edee59bf1063888a257f27db77db7af9cd2c49b95994cfe0b3464b07aea0",
+   "attractor_radius": "58ab2150318b0920980ad3e05adf016e5fd9129c5192da35a139ac96bfc2a98c",
+   "attractor_curvature": "f470a44e7885a675c3c5df1b3b7f32947a85d0b207578f02765150e772bd2c44",
+   "MSE": "5a88cd51ec023ded95ad97be0b2e064925c5f948dbd0fe2286a4d5c36768f0b5"
+  },
+  "chbmit/chb02/chb02_16/left_front_temporal@30600": {
+   "S": "d39968b8456016d2ec66ba818fbca47c97f7f3664873445e4ab085f0c2c8aa9a",
+   "dS": "57ff17f8e28ac0711318d68a15f95e2420fcb3c324cb696062aaf7930ddd4652",
+   "kappa": "f1af690a8a1625ba8d86e697c95b427338d4cba735a7cb8cbde7b2933859ed24",
+   "coherence": "0e26536b220798d47d102c1ef79055e45f702457375e91071e1256f12bb597c4",
+   "resonance": "18a843bdad98c00823fd91a714515e97b4d1a2c6de115163ae933de77606b1ea",
+   "Phi": "4baff003ba622641a333a98ba738a0e5642ddbb3f30f833f39d336830a1f3b0b",
+   "decision": "b4d4b32d4e567b6c51f3f96dcded595dc4f4548a6ca533adb0b6a0e46c63a209",
+   "lyapunov": "279b36e76b9c31d0735371700ab5b79e8660aba209719de1204b8f1b69ce481b",
+   "lyapunov_S": "6d53a399fc898c0c5bff74cb7b4e88671f2d2e928fadac57bad0dbcd03bcbc16",
+   "attractor_radius": "618bd6a019cc577f5feac489aa193a4f17e85032e7bb2eacbdd9c2f7bd1c6fb8",
+   "attractor_curvature": "9dac6f981f11edb6f569baa8f63f4e1047f1c209f854c6e4d7a5a05555f06751",
+   "MSE": "d6877a131fdb33efbe6836a8c3bfa7dd93ace18489fd50238706bed7a904cf3d"
+  },
+  "chbmit/chb03/chb03_01/left_front_temporal@115200": {
+   "S": "04f0fc22f8bcf16adad8d00095ac5733602c443ce4c6b71c7a17ebd89b81e955",
+   "dS": "4ed174baf10563810a3c054bf02c4b3b1a0d3f3263a5ebec80f08f07fc4a4639",
+   "kappa": "64434bff021f05a2203694607ce07b7462135fc571160cb050b07387cfc13c94",
+   "coherence": "0e26536b220798d47d102c1ef79055e45f702457375e91071e1256f12bb597c4",
+   "resonance": "3e18e5b30420bfff995c866326e92c2da1033654f86e87ee53452affd437b8fd",
+   "Phi": "5c0890bd54057207bb784406c51998976c2d46d46d84fab8f5cb54593488bcd3",
+   "decision": "5b88be95803577004f964fe272b963533d926cb90f619a91d395a6e724de258c",
+   "lyapunov": "63cea635666a9d1e5734cf232ae4e5f1944a6b22c2a47073eb37326ecb80e196",
+   "lyapunov_S": "73ed35ec6d6680038fd585a0c109ff6dbc831ab2b39a645fe58e82c7d19d9cc6",
+   "attractor_radius": "c27463966212e5fc845597965fdfa9c42e124a25e1c9bc9d97b6be68ec9cc245",
+   "attractor_curvature": "ff6cb6479c355c1340cb9de80104babaa59f20efddb2662f0a0e9314a7dacf53",
+   "MSE": "73b6784e8e3064188ec52e4c217935207487ce9901b50101a02d8ca1093e3cc7"
+  },
+  "chbmit/chb04/chb04_05/left_front_temporal@304200": {
+   "S": "2ff610f8d3376426d8b4cff1e0af2c4d077427bbeb8322c4233f32d1793ba50e",
+   "dS": "aabc6d7e072077f8f315bb90411c058449766d8bb7833d34174301e345e9fc43",
+   "kappa": "657d734b225a57891836fae0d0df60fd34045d17e8aed0391c902c8eed4c8819",
+   "coherence": "0e26536b220798d47d102c1ef79055e45f702457375e91071e1256f12bb597c4",
+   "resonance": "3145c1085c8d75ebcb101653040dd3209e803009915b542b3a1f1174fc7bbc53",
+   "Phi": "de02f7c125b4a9fe6dc3506a758eba2e8e89d453a69d77905988f478767fe30d",
+   "decision": "331527223e381cc5c62818eb399cfbb700eafa03a68ce1386aaaaa90c9cb8ec1",
+   "lyapunov": "55f3724aef5b081ed0c8d3fe56ebac1c9a86c44177fb8c0a4502a834e45426e6",
+   "lyapunov_S": "4a1a69112c66f145e47fcf6d466034cccdf3c9c018231165f1e463e00a682a41",
+   "attractor_radius": "4672dc79d6ca6366321f8010e0e5adcfa5de56854d9792bfec9fe7199d6c4961",
+   "attractor_curvature": "5c8c9812061c65f6f62198ba0d302f5ecf22fa3d0a46ee7685395869960c9009",
+   "MSE": "f0f3373cf332ea0dd11c150a9f22a0eba6bead0eb4bc2071da78d927678a1e6f"
+  },
+  "constructed/sine64_logistic": {
+   "S": "200fb27d3265fd968b3db1d86b6cabb7db57669d8cf717b0a5b1e650755264a2",
+   "dS": "75d7bcf0d88c3e226f250ea0d8d6476158c2dc1cbb39014603784691943cd847",
+   "kappa": "9be0484bca32f58099f7eb53a43411c2f2f4d20d244ef5daa2ac23bfea0d4f62",
+   "coherence": "0e26536b220798d47d102c1ef79055e45f702457375e91071e1256f12bb597c4",
+   "resonance": "88680b1a62b6fd856f7ae5b65ed5ee13f6ad8747f0f7693086be962a6f36fcff",
+   "Phi": "53e612198aa29642b6fed606c098fc900577f5018cf8c290968009677fe6e83e",
+   "decision": "ccce9ff3b9cfe93bca1e665aaf97987ee5e5b86f279b03cc305cfeb7b5fb2b87",
+   "lyapunov": "10486ce100e4e4293c4cafefcafcb8682a65cad780e96346a67c3430c47c3d4e",
+   "lyapunov_S": "4fb46b3cedd849f9fef1a23912c54ef7c7fb1055a35178f71ae550ce6a167ba7",
+   "attractor_radius": "c7d74079d25cc2864e38086578c325e31db5463f72cff85108bff5843806e9d7",
+   "attractor_curvature": "033f132a0fef88034c45e5f571210de408b90d0a4ab432fc69b9b4e3f1f88805",
+   "MSE": "0067412de03f1820ab4f2c68cb248ccda6c3c5d149489969a9c7edd898d82d11"
+  },
+  "constructed/step_sine23": {
+   "S": "7002768f60e88d0d5c5452d50e7167b44d8fa6898d92c5485536bc9a79ee8ad6",
+   "dS": "588db8eb6dc36d766c6a4ea65bbf76128b9f3140dba96e242b79a69e42bc73a6",
+   "kappa": "f70a983c54aebdada900a1ed451dce4b781e9476cd94d98b5f6596b92c0d8d3a",
+   "coherence": "0e26536b220798d47d102c1ef79055e45f702457375e91071e1256f12bb597c4",
+   "resonance": "120ac6dfff645c6ccd2245cf0a1812386d583cc6d4e930714631278f5aaf6374",
+   "Phi": "73edcdc3a7185a6dfe96d257497d424610324f5f30e01383047ac2295564c6a2",
+   "decision": "cb50119d4931c6f58e6cb15a722c33f4ef64a7f01090d28d9a1e26139d7f961c",
+   "lyapunov": "3db5c1864cab442292d0683890f854e868136709c8e7f50029c163401312809c",
+   "lyapunov_S": "222d344fc3879886a144427b800da250071d7afdfc4f6ccbec1c88f02e8214b8",
+   "attractor_radius": "275d44c1a412a5abfa3fbe46f76e8ac4d70ab7f6b2ea592bdb3149add2ee7420",
+   "attractor_curvature": "290bcf9c2fdd276cc569b1b28b2134df39f74293ba2e11572404de9a6842b39c",
+   "MSE": "5f40b816e61f107f65510dfc5cccb40ad841f2b1c6bfc6613f025315ab584359"
+  }
+ },
+ "legacy_run_seconds_median": 2.073,
+ "points": {
+  "file": "readings/compat/points.npz",
+  "sha256": "5a3107fd2182e51c7d57f5debcea39bbfdd7a1444a8c5144c396100a0b5ab051",
+  "rows": [
+   300,
+   800,
+   1400,
+   2000,
+   2399
+  ],
+  "outputs": [
+   "S",
+   "dS",
+   "kappa",
+   "Phi"
+  ]
+ },
+ "leakage": {
+  "comparisons": 54,
+  "with_difference": 0,
+  "details": [],
+  "cuts": [
+   800,
+   1400,
+   2000
+  ],
+  "ends": "cut-1, cut-128, cut-255",
+  "alteration": "samples from the cut on replaced by their reverse x 1.7 plus 0.3 standard deviations"
+ },
+ "measure_six_channels_ms": 8.624,
+ "peak_memory_mb": 97.8,
+ "seconds": 14.8,
+ "data_in_this_file": "hashes, pass/fail, timings; no EEG value; the entropy values are in readings/ on the droplet, not committed"
+}

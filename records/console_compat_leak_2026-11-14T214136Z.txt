@@ -1,0 +1,17 @@
+host neoamorfic-physics-01   commit f28f8de   utc 2026-11-14T214136Z   script tests/compat_leak.py
+--- the candidate's identity check
+{
+  "version": "QEIv18.2.0-candidate.1",
+  "state": "PASS",
+  "checked_files": 38,
+  "mismatches": [],
+  "status": "Experimental candidate, not independently certified"
+}
+V182 candidate compatibility and leakage: 6 bases; config {'entropy_window': 256, 'coherence_window': 256, 'segment_length': 32}; numpy 2.2.6, scipy 1.15.3
+  A. legacy_run on 6 bases (2.1 s per call)
+  B. entropy values at 30 points stored
+  C. leakage: 54 comparisons, 0 with any difference
+  D. measure on six channels: 8.62 ms per call
+record: records/compat_leak_2026-11-14.json
+COMPAT LEAK DONE
+exit code: 0
